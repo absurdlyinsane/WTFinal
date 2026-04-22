@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  web:
+    build: .
+    container_name: alpine-lamp-2
+    ports:
+      - "0.0.0.0:8081:80"
+    volumes:
+      - ./www:/var/www/localhost/htdocs
+      - dbdata:/var/lib/mysql
+    restart: unless-stopped
+
+volumes:
+  dbdata:

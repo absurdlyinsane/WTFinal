@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Register</h1>
+    <br>
+    <form method="POST" action="main.php">
+        <label for="name">Name: </label>
+        <input type="text" name="name">
+        <br><br>
+        <label for="gender">Gender: </label>
+        <input type="radio" name="gender" id="male" value="male">Male</input>
+        <input type="radio" name="gender" id="female" value="female">Female</input>
+        <br><br>
+        <label for="address">Address: </label>
+        <textarea name="address" id="address"></textarea>
+        <br><br>
+        <label for="division">Division: </label>
+        <select name="division" id="division">
+            <option value="Dhaka">Dhaka</option>
+            <option value="Rajshahi">Rajshahi</option>
+            <option value="Khulna">Khulna</option>
+            <option value="Barishal">Barishal</option>
+            <option value="Chittagong">Chittagong</option>
+            <option value="Sylhet">Sylhet</option>
+            <option value="Rangpur">Rangpur</option>
+            <option value="Mymensingh">Mymensingh</option>
+        </select>
+        <br><br>
+        <label for="country">Country: </label>
+        <select name="country" id="country">
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Other">Other</option>
+        </select>
+        <br><br>
+        <label for="dob">Date of Birth: </label>
+        <input type="date" name="dob">
+        <br><br><br>
+        <button id="submit">Submit</button>
+    </form>
+</body>
